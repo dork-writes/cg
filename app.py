@@ -342,17 +342,10 @@ def AllCars(name):
     return render_template("altis.html",specs = specs, user_name_recieved = ud.username)
 
 def connection():
-    server = 'tcp:myserver.database.windows.net' 
-    database = 'carguru123' 
-    username = 'sao' 
-    password = 'abcd1234##' 
-    conn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
-#    conn = pyodbc.connect('Driver={ODBC Driver 18 for SQL Server};'
- #                         'Server=tcp:thecarguru.database.windows.net,1433;'
-  #                        'Database=carguru123;'
-   #                       'Uid=sao;'
-    #                     'Encrypt=yes;'
-     #                     'TrustServerCertificate=no;')
+    conn = pyodbc.connect('Driver={SQL SERVER};'
+                      'Server=DESKTOP-C8I7AT8;'
+                      'Database=Project;'
+                      'Trusted_Connection=yes;')
     return conn
 
 
