@@ -346,7 +346,7 @@ def connection():
     database = 'carguru123' 
     username = 'sao' 
     password = 'abcd1234##' 
-    conn = pyodbc.connect('DRIVER={ODBC Driver 17 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
+    conn = pyodbc.connect('DRIVER={ODBC Driver 13 for SQL Server};SERVER='+server+';DATABASE='+database+';UID='+username+';PWD='+ password)
 #    conn = pyodbc.connect('Driver={ODBC Driver 18 for SQL Server};'
  #                         'Server=tcp:thecarguru.database.windows.net,1433;'
   #                        'Database=carguru123;'
